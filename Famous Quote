@@ -1,0 +1,4 @@
+let quote: string = 'Value Loyalty Above All Else.';
+let author: string = 'Raymond Reddington';
+console.log(`${author} once said, "${quote}"`);
+
