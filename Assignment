@@ -44,3 +44,11 @@ for (let i = 0; i < names.length; i++) {
   console.log(`Hello ${names[i]},Or kya chal raha hai`);
 }
 
+//My Own Array
+let names: string[] = ["Honda", "Kawasaki", "Suzuki", "Yamaha", "Triumph", "Harley Davidson"];
+
+for (let i = 0; i < names.length; i++) {
+  console.log(`I would really like to purchase a ${names[i]} motorcyle one day`);
+}
+
+
