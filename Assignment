@@ -15,3 +15,32 @@ console.log('Raymond Reddington once said, "Value Loyalty Above All Else."')
 let quote: string = 'Value Loyalty Above All Else.';
 let famous_person: string = 'Raymond Reddington';
 console.log(`${author} once said, "${quote}"`);
+
+// Stripping Names
+let personName: string = "\t\t\t\tAzfar Suhail\n";
+console.log(personName);
+console.log(personName.trim());
+
+//Number Eight
+console.log(5 + 3);
+console.log(10 - 2);
+console.log(4 * 2);
+console.log(16 / 2);
+
+//Favourite Number
+let favoriteNumber: number = 1104;
+let message: string = `My favorite number is ${favoriteNumber}.`;
+console.log(message);
+
+//Storing Names in an Array
+let names: string[] = ["Azfar", "Faisal", "Huzaifa", "Osman"];
+for (let i = 0; i < names.length; i++) {
+  console.log(names[i]);
+}
+
+//Greetings 
+let names: string[] = ["Azfar", "Faisal", "Huzaifa", "Osman"];
+for (let i = 0; i < names.length; i++) {
+  console.log(`Hello ${names[i]},Or kya chal raha hai`);
+}
+
