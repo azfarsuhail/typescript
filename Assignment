@@ -1,0 +1,17 @@
+//Personal Messsage
+let personName: string = "Azfar";
+let message: string = `Hello ${personName}, would you like to learn some Python today?`;
+console.log(message);
+
+//Personal Message
+let personName: string = "Azfar";
+let message: string = `Hello ${personName}, would you like to learn some Python today?`;
+console.log(message);
+
+//Famous Quote
+console.log('Raymond Reddington once said, "Value Loyalty Above All Else."')
+
+//Famous Quote 2
+let quote: string = 'Value Loyalty Above All Else.';
+let famous_person: string = 'Raymond Reddington';
+console.log(`${author} once said, "${quote}"`);
