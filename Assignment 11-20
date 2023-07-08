@@ -1,0 +1,33 @@
+// Guest List
+let guestList: string[] = ["Elon Musk", "Marie Curie",  "Thomas Edison", "Leonardo da Vinci", "Bill Gates"];
+
+for (let i = 0; i < guestList.length; i++) {
+  console.log(`Dear ${guestList[i]}, you are cordially invited to dinner at my place. Please join us for an evening of great food and conversation.`);
+}
+
+// Changing Guest List
+let guestList: string[] = ["Elon Musk", "Marie Curie",  "Thomas Edison", "Leonardo da Vinci", "Bill Gates"];
+
+for (let i = 0; i < guestList.length; i++) {
+  console.log(`Dear ${guestList[i]}, you are cordially invited to dinner at my place. Please join us for an evening of great food and conversation.`);
+}
+  for (let i = 0; i < guestList.length; i++) {
+  console.log(`Dear ${guestList[i]}, you are cordially invited to dinner at my place. Please join us for an evening of great food and conversation.`);
+}
+
+let guestWhoCantMakeIt: string = "Marie Curie";
+
+console.log(`${guestWhoCantMakeIt} can't make it to the dinner.`);
+
+// Find the index of the guest who can't make it
+let index = guestList.indexOf(guestWhoCantMakeIt);
+
+if (index !== -1) {
+  // Replace the guest who can't make it with a new guest
+  guestList[index] = "Nikola Tesla";
+}
+
+// Print the second set of invitation messages
+for (let i = 0; i < guestList.length; i++) {
+  console.log(`Dear ${guestList[i]}, you are cordially invited to dinner at my place. Please join us for an evening of great food and conversation.`);
+}
