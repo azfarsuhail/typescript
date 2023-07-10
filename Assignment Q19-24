@@ -1,0 +1,135 @@
+//Dinner Guests
+let guestList: string[] = ["Elon Musk", "Marie Curie",  "Thomas Edison", "Leonardo da Vinci", "Bill Gates"];
+
+for (let i = 0; i < guestList.length; i++) {
+  console.log(`Dear ${guestList[i]}, you are cordially invited to dinner at my place. Please join us for an evening of great food and conversation.`);
+}
+console.log(`'\nYou are inviting ${guestList.length} people to dinner.`);
+
+//Creating a array 
+let mountains: string[] = ["Mount Everest", "K2", "Kangchenjunga", "Matterhorn", "Denali"];
+
+console.log(mountains);
+
+// Creating objects of the data
+let mountEverest = {
+  name: "Mount Everest",
+  height: 8848,
+  location: "Nepal"
+};
+
+let k2 = {
+  name: "K2",
+  height: 8611,
+  location: "Pakistan"
+};
+
+let kangchenjunga = {
+  name: "Kangchenjunga",
+  height: 8586,
+  location: "Nepal/India"
+};
+
+let matterhorn = {
+  name: "Matterhorn",
+  height: 4478,
+  location: "Switzerland/Italy"
+};
+
+let denali = {
+  name: "Denali",
+  height: 6190,
+  location: "United States"
+};
+
+console.log(mountEverest);
+console.log(k2);
+console.log(kangchenjunga);
+console.log(matterhorn);
+console.log(denali);
+
+// Intentional Erroe
+let mountains: string[] = ["Mount Everest", "K2", "Kangchenjunga", "Matterhorn", "Denali"];
+
+console.log(mountains[6);//Output will be displayed as undefined
+
+//Conditional Statements
+let car: string = 'subaru';
+
+console.log("Is car == 'subaru'?");
+console.log(car == 'subaru');
+
+console.log("Is car == 'honda'?");
+console.log(car == 'honda');
+
+console.log("Is car != 'ford'?");
+console.log(car != 'ford');
+
+console.log("Is car != 'subaru'?");
+console.log(car != 'subaru');
+
+console.log("Is car === 'subaru'?");
+console.log(car === 'subaru');
+
+console.log("Is car === 'Subaru'?");
+console.log(car === 'Subaru');
+
+console.log("Is car !== 'subaru'?");
+console.log(car !== 'subaru');
+
+console.log("Is car !== 'honda'?");
+console.log(car !== 'honda');
+
+// More Conditional Statements
+
+//Tests for equality and inequality with strings:
+let name: string = "John";
+
+console.log(name == "John"); // true
+console.log(name != "Mary"); // true
+console.log(name == "john"); // false (case-sensitive)
+console.log(name != "John"); // false
+
+//Tests using the lowercase function:
+let message: string = "Hello, World!";
+
+console.log(message.toLowerCase() == "hello, world!"); // true
+console.log(message.toLowerCase() != "HELLO, WORLD!"); // true
+console.log(message.toLowerCase() == "Hello, World!"); // false
+console.log(message.toLowerCase() != "hello, world!"); // false
+
+//Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to:
+let x: number = 5;
+let y: number = 10;
+
+console.log(x == 5); // true
+console.log(x != 10); // true
+console.log(y > 5); // true
+console.log(y < 20); // true
+console.log(x >= 5); // true
+console.log(y <= 10); // true
+console.log(x > y); // false
+console.log(y < x); // false
+
+//Tests using "and" and "or" operators:
+let age: number = 25;
+let hasLicense: boolean = true;
+
+console.log(age > 18 && hasLicense); // true
+console.log(age > 30 && hasLicense); // false
+console.log(age > 18 || hasLicense); // true
+console.log(age > 30 || hasLicense); // true
+
+//Test whether an item is in an array:
+let fruits: string[] = ["apple", "banana", "orange"];
+
+console.log(fruits.includes("apple")); // true
+console.log(fruits.includes("grape")); // false
+
+//Test whether an item is not in an array:
+let animals: string[] = ["lion", "tiger", "elephant"];
+
+console.log(!animals.includes("zebra")); // true
+console.log(!animals.includes("lion")); // false
+
+
