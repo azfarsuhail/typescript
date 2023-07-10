@@ -123,13 +123,15 @@ console.log(age > 30 || hasLicense); // true
 //Test whether an item is in an array:
 let fruits: string[] = ["apple", "banana", "orange"];
 
-console.log(fruits.includes("apple")); // true
-console.log(fruits.includes("grape")); // false
+console.log(fruits.indexOf("apple") !== -1); // true
+console.log(fruits.indexOf("grape") !== -1); // false
+
 
 //Test whether an item is not in an array:
 let animals: string[] = ["lion", "tiger", "elephant"];
 
-console.log(!animals.includes("zebra")); // true
-console.log(!animals.includes("lion")); // false
+console.log(animals.indexOf("zebra") === -1); // true
+console.log(animals.indexOf("lion") === -1); // false
+
 
 
