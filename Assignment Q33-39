@@ -1,0 +1,72 @@
+//Ordinal Number
+let numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (let number of numbers) {
+  let ordinal: string;
+
+  if (number === 1) {
+    ordinal = "1st";
+  } else if (number === 2) {
+    ordinal = "2nd";
+  } else if (number === 3) {
+    ordinal = "3rd";
+  } else {
+    ordinal = `${number}th`;
+  }
+
+  console.log(ordinal);
+}
+
+//Pizzas
+let favoritePizzas: string[] = ["Pepperoni", "Tikka", "BBQ Chicken"];
+
+for (let pizza of favoritePizzas) {
+  console.log(`I like ${pizza} pizza.`);
+}
+
+console.log("I really love pizza!");
+
+//Animals
+let animals: string[] = ["Dog", "Cat", "Horse"];
+
+for (let animal of animals) {
+  console.log(`A ${animal.toLowerCase()} would make a great pet.`);
+}
+
+console.log("Any of these animals would make a great pet!");
+
+//T-Shirts
+function make_shirt(size: string, message: string): void {
+  console.log(`The shirt size is ${size} and it will have the message: "${message}".`);
+}
+
+make_shirt("Large", "Life goes on");
+
+//Large T-Shirt
+function make_shirt(size: string, message: string): void {
+  if(size=="Large"||size=="Medium"){
+  console.log(`The shirt size is ${size} and it will have the message: "I love TypeScript".`);
+  }
+  else {
+    console.log(`The shirt size is ${size} and it will have the message: "${message}".`)
+  }
+}
+
+make_shirt("small", "Parh Parh ke pura horaha");
+
+//Cities
+function describe_city(city:string,country:string="Pakistan"):void{
+  console.log(`${city} is in ${country}`)
+}
+describe_city("Karachi")
+describe_city("New York","USA")
+describe_city("Lahore")
+
+//City Names
+function describe_city(city:string,country:string="Pakistan"):string{
+ let result:string=`${city},${country}`;
+  return result;
+}
+console.log(describe_city("Karachi"));
+console.log(describe_city("New York","USA"));
+console.log(describe_city("Lahore"));
