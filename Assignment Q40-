@@ -1,0 +1,135 @@
+//Albums
+interface Album {
+  artist: string;
+  title: string;
+  tracks?: number;
+}
+
+function make_album(artist: string, title: string, tracks?: number): Album {
+  const album: Album = {
+    artist,
+    title
+  };
+  if (tracks !== undefined) {
+    album.tracks = tracks;
+  }
+  return album;
+}
+
+// Example calls to make_album() function
+const album1 = make_album('Artist 1', 'Album 1');
+const album2 = make_album('Artist 2', 'Album 2', 12);
+const album3 = make_album('Artist 3', 'Album 3', 8);
+
+// Print album information
+console.log(album1);
+console.log(album2);
+console.log(album3);
+
+//Magicians
+function show_magicians(magicians: string[]): void {
+  for (let magician of magicians) {
+    console.log(magician);
+  }
+}
+
+// Creating an array of magician's names
+let magicianNames: string[] = ["Harry Houdini", "David Copperfield", "Penn Jillette", "Teller"];
+
+// Calling the function to show the magician's names
+show_magicians(magicianNames);
+
+
+//Great Magicians
+function make_great(magicians: string[]): void {
+  for (let i = 0; i < magicians.length; i++) {
+    magicians[i] = `the Great ${magicians[i]}`;
+  }
+}
+
+// Rest of the code from Exercise 39
+
+function show_magicians(magicians: string[]): void {
+  for (let magician of magicians) {
+    console.log(magician);
+  }
+}
+
+// Creating an array of magician's names
+let magicianNames: string[] = ["Harry Houdini", "David Copperfield", "Penn Jillette", "Teller"];
+
+// Calling the function to make the magicians great
+make_great(magicianNames);
+
+// Calling the function to show the magician's names
+show_magicians(magicianNames);
+
+//Unchanged Magicians
+function make_great(magicians: string[]): string[] {
+  let modifiedMagicians: string[] = [];
+
+  for (let magician of magicians) {
+    modifiedMagicians.push(`the Great ${magician}`);
+  }
+
+  return modifiedMagicians;
+}
+
+// Rest of the code from Exercise 40
+
+function show_magicians(magicians: string[]): void {
+  for (let magician of magicians) {
+    console.log(magician);
+  }
+}
+
+// Creating an array of magician's names
+let magicianNames: string[] = ["Harry Houdini", "David Copperfield", "Penn Jillette", "Teller"];
+
+// Calling the function to make the magicians great and storing the modified names in a new array
+let modifiedNames: string[] = make_great([...magicianNames]);
+
+// Calling the function to show the original magician's names
+show_magicians(magicianNames);
+
+console.log("--------------------");
+
+// Calling the function to show the modified magician's names
+show_magicians(modifiedNames);
+
+//Sandwiches
+function make_sandwich(...items: string[]): void {
+  console.log("Making a sandwich with the following items:");
+  for (let item of items) {
+    console.log("- " + item);
+  }
+  console.log("Enjoy your sandwich!");
+}
+
+// Calling the function with different numbers of arguments
+make_sandwich("Bread", "Ham", "Cheese");
+make_sandwich("Bread", "Turkey", "Lettuce", "Tomato");
+make_sandwich("Bread", "Peanut Butter", "Jelly");
+
+//Cars
+
+function store_car_info(manufacturer: string, model: string, ...options: { [key: string]: any }[]): { manufacturer: string, model: string, options: { [key: string]: any } } {
+  let car: { manufacturer: string, model: string, options: { [key: string]: any } } = {
+    manufacturer: manufacturer,
+    model: model,
+    options: {}
+  };
+
+  for (let option of options) {
+    let key = Object.keys(option)[0];
+    car.options[key] = option[key];
+  }
+
+  return car;
+}
+
+// Calling the function with the required information and additional name-value pairs
+let carInfo = store_car_info("Toyota", "Camry", { color: "Red" }, { features: ["Navigation", "Sunroof"] });
+
+// Printing the returned object to verify the stored information
+console.log(carInfo);
